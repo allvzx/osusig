@@ -97,6 +97,9 @@
                 <span>
                     <input type="checkbox" name="adv-opaque-avatar" /> Add a background behind the avatar
                 </span>
+                <span>
+                    <input type="checkbox" name="adv-default-avatar" /> Default avatar (in case the user hasn't set an avatar yet)
+                </span>
 	            <span>
 		            Show an online indicator (slows down signature)
 		            <select name="adv-online-indicator">

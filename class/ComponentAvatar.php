@@ -93,8 +93,12 @@ class ComponentAvatar extends Component
 			$avatarBlob = @file_get_contents($avatarURL);
 
 			if ($avatarBlob === false) {
-				$avatar->newImage(128, 128, new ImagickPixel("#f8f8f8"));
-				$avatar->setImageFormat('png');
+				if (isset($_GET["defaultavatar"])) {
+					$avatarBlob = @file_get_contents(self::AVATAR_URL);
+				} else {
+					$avatar->newImage(128, 128, new ImagickPixel("#f8f8f8"));
+					$avatar->setImageFormat('png');
+				}
 			}
 
 			$matches = array();

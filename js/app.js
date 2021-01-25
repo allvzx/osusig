@@ -23,6 +23,8 @@ $(function() {
             url += ($("input[name=adv-flag-shadow]").prop('checked') ? "&flagshadow" : "");
             url += ($("input[name=adv-flag-stroke]").prop('checked') ? "&flagstroke" : "");
 
+            url += ($("input[name=adv-default-avatar]").prop('checked') ? "&defaultavatar" : "");
+
             url += ($("input[name=adv-dark-header]").prop('checked') ? "&darkheader" : "");
             url += ($("input[name=adv-dark-triangles]").prop('checked') ? "&darktriangles" : "");
 
