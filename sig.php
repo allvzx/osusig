@@ -2,14 +2,14 @@
 // Thanks to Cygnix
 // Created by Lemmmy
 
-function __autoload($class_name) {
+spl_autoload_register(function($class_name) {
 	$directory = 'class/';
 
 	if (file_exists($directory . $class_name . '.php')) {
 		require_once ($directory . $class_name . '.php');
 		return;
 	}
-}
+});
 
 $api = new OsuAPI(getenv("OSU_APIKEY", true));
 
