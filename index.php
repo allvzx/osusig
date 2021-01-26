@@ -78,7 +78,7 @@
             </div>
             <br>
             <label for="out">BBCode:</label>
-            <input type="text" name="out" id="out" value="[img]http://lemmmy.pw/osusig/sig.php?colour=pink&uname=Lemmmy[/img]" style="width: 100%; text-align: center" readonly />
+            <input type="text" name="out" id="out" style="width: 100%; text-align: center" readonly />
             <br><br>
             <a href="#" id="regen" class="button">Generate</a>
         </article>

@@ -5,6 +5,8 @@ $(function() {
 
     var lc = 0;
 
+    reloadSig();
+
     function reloadSig() {
         if (new Date().getTime() >= lc + 500) {
             lc = new Date().getTime();
@@ -38,7 +40,7 @@ $(function() {
             url += ($("input[name=adv-xp-bar]").prop('checked') ? "&xpbar" : "");
             url += ($("input[name=adv-xp-bar-hex]").prop('checked') ? "&xpbarhex" : "");
 
-            var fullurl = "http://lemmmy.pw/osusig/" + url;
+            var fullurl = `${document.location.href}${url}`;
 
             $("img.preview").remove();
 
