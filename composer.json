@@ -1,5 +1,7 @@
 {
-  "require": {
-    "ext-memcached": "*"
-  }
+    "require": {
+        "ext-memcached": "^3.1",
+        "ext-imagick": "^3.4",
+        "ext-gd": "^7.4"
+    }
 }

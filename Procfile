@@ -1,1 +1,1 @@
-web: composer update && heroku-php-apache2
+web: composer install && heroku-php-apache2
