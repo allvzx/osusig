@@ -24,7 +24,7 @@
     <body>
         <div class="page-header">
             <span class="title">osu!next Signature Generator</span><br>
-            <span class="shameless-self-promotion">by <a href="https://osu.ppy.sh/u/4656511">Lemmmy</a> - source code available <a href="https://github.com/Lemmmy/osusig">here</a></span>
+            <span class="shameless-self-promotion">by <a href="https://osu.ppy.sh/u/4656511">Lemmmy</a>, a bit modified by <a href="https://github.com/Allvaa">Allvaa</a> - source code available <a href="https://github.com/allvzx/osusig">here</a></span>
         </div>
         <header>Choose a colour</header>
         <article>
@@ -51,7 +51,7 @@
         <header>Set your data</header>
         <article style="text-align: center;">
             <label for="uname">Name</label>
-            <input type="text" placeholder="Lemmmy" name="uname" id="uname" />
+            <input type="text" placeholder="vaaalz" name="uname" id="uname" />
             <br><br>
             <label for="mode">Mode</label>
             <ul class="modes">
@@ -74,7 +74,7 @@
         <header>Your Signature</header>
         <article style="text-align: center;">
             <div id="previewarea">
-                <img src="sig.php?colour=pink&uname=Lemmmy" class="preview lazy" width="338" height="94">
+                <img class="preview lazy" width="338" height="94">
             </div>
             <br>
             <label for="out">BBCode:</label>

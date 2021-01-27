@@ -14,7 +14,7 @@ $(function() {
             var url = "sig.php?";
 
             url += "colour=" + colour.replace('#', "hex");
-            url += "&uname=" + encodeURIComponent(($("input[name=uname]").val() || "Lemmmy"));
+            url += "&uname=" + encodeURIComponent(($("input[name=uname]").val() || "vaaalz"));
             if(mode > 0) url += "&mode=" + mode;
             url += (ppmode >= 0 ? "&pp=" + ppmode : "");
 
