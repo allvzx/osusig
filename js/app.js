@@ -38,7 +38,7 @@ $(function() {
             url += ($("select[name=adv-online-indicator]").val() !== '0' ? "&onlineindicator=" + $("select[name=adv-online-indicator]").val() : "");
 
             url += ($("input[name=adv-xp-bar]").prop('checked') ? "&xpbar" : "");
-            url += ($("input[name=adv-xp-bar-hex]").prop('checked') ? "&xpbarhex" : "");
+            url += ($("input[name=adv-xp-bar]").prop('checked') && $("input[name=adv-xp-bar-hex]").prop('checked') ? "&xpbarhex" : "");
 
             var fullurl = `${document.location.href}${url}`;
 
@@ -103,11 +103,10 @@ $(function() {
             });
             $(this).addClass("selected");
 
-            colour = $(this).attr('id').replace("colour-", "");
-
             if ($(this).attr('id') == 'colour-hex') {
-                $($("#hex-picker").spectrum("container")).slideDown();
+                $($("#hex-picker").spectrum("container")).slideToggle();
             } else {
+                colour = $(this).attr('id').replace("colour-", "");
                 $("#colour-hex").css("background-color", $(this).css("background-color"));
                 $("#hex-picker").spectrum("set", $(this).css("background-color"));
                 $($("#hex-picker").spectrum("container")).slideUp();

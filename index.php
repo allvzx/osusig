@@ -128,7 +128,7 @@
                     <input type="checkbox" name="adv-xp-bar" /> Show an XP bar at the bottom
 	            </span>
                 <span>
-                    <input type="checkbox" name="adv-xp-bar-hex" /> Use signature colour for XP bar
+                    <input type="checkbox" name="adv-xp-bar-hex" disabled/> Use signature colour for XP bar
 	            </span>
             </div>
         </article>
